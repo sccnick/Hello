@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nick.hello.ContainerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@drawable/selector_list_containers"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_medium">
+
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="start|center">
+            <ImageView
+                android:padding="@dimen/space_small"
+                android:id="@+id/ivStateColor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_circle"
+                android:tint="@color/colorAccent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_weight="2.8"
+            android:paddingLeft="@dimen/space_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingTop="@dimen/space_normal"
+                android:id="@+id/container_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="NAME"
+                android:textColor="@color/colorNameContainer"
+                android:textSize="@dimen/text_size_extra_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/container_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/space_normal"
+                android:text="IMAGE"
+                android:textColor="@color/colorNameContainerLevel2"
+                android:textSize="@dimen/space_large" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/container_status"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:paddingTop="@dimen/space_small"-->
+                <!--android:paddingBottom="@dimen/space_normal"-->
+                <!--android:text="STATUS"-->
+                <!--android:textColor="@color/colorNameContainerLevel3"-->
+                <!--android:textSize="@dimen/space_large" />-->
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="0.1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="end|center">-->
+            <!--<LinearLayout-->
+                <!--android:weightSum="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_gravity="center|end"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:id="@+id/ivRename"-->
+                    <!--android:clickable="true"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:src="@drawable/ic_rename"-->
+                    <!--android:tint="@color/colorControlNormal"-->
+                    <!--android:background="@drawable/selector_control"/>-->
+
+                <!--<ImageView-->
+                    <!--android:padding="@dimen/space_normal"-->
+                    <!--android:id="@+id/ivControl"-->
+                    <!--android:clickable="true"-->
+                    <!--android:layout_gravity="center|end"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:src="@drawable/ic_control"-->
+                    <!--android:tint="@color/colorControlNormal"-->
+                    <!--android:background="@drawable/selector_control"/>-->
+            <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>
+
+</LinearLayout>

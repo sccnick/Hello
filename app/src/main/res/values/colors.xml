@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3A8CB4</color>
+    <color name="colorNameContainer">#1b1c30</color>
+    <color name="colorNameContainerLevel2">#28283b</color>
+    <color name="colorNameContainerLevel3">#33333e</color>
+    <color name="Fahoou">#cae2f4f5</color>
+
+    <color name="colorRunning">#39d41e</color>
+    <color name="colorExited">#b90104</color>
+    <color name="colorPause">#f9ca1f</color>
+
+    <color name="colorControlNormal">#a3a3a3</color>
+    <color name="colorControlPresses">#696969</color>
+</resources>

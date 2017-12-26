@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_large"
+        android:paddingRight="@dimen/space_extra_large">
+
+        <TextView
+            android:id="@+id/text_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Add host"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_medium"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/space_medium"
+            android:textColorHint="@color/colorPrimary">
+
+            <EditText
+                android:layout_marginRight="@dimen/space_normal"
+                android:id="@+id/edt_host_ipaddr"
+                android:inputType="text"
+                android:singleLine="true"
+                android:background="@drawable/untitled"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="IP Address" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/space_medium"
+            android:textColorHint="@color/colorPrimary">
+            <EditText
+                android:layout_marginLeft="@dimen/space_normal"
+                android:layout_marginRight="@dimen/space_normal"
+                android:id="@+id/edt_host_port"
+                android:inputType="number"
+                android:background="@drawable/untitled"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Port" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:padding="@dimen/space_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_medium"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/edt_host_name"
+            android:inputType="text"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:layout_width="240dp"
+            android:background="@drawable/untitled"
+            android:layout_height="match_parent"
+            android:hint="Host Name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_extra_large"
+        android:paddingRight="@dimen/space_extra_large">
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
